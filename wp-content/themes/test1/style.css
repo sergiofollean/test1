@@ -350,3 +350,54 @@ footer button{
 	border: 1px solid #fff;
 	border-radius: 8px;
 }
+.dish_slider .slick-next{
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    z-index: 1;
+    font-size: 0;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    bottom: -20px;
+    border: 0;
+    right: 58px;
+    outline: none;
+}
+.dish_slider .slick-next:after{
+	content: "";
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    font-size: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background: transparent;
+    cursor: pointer;
+}
+.dish_slider .slick-prev{
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    z-index: 1;
+    font-size: 0;
+    padding: 15px;
+    border-radius: 8px 0 0 8px;
+    bottom: -20px;
+    border: 0;
+    right: 100px;
+    outline: none;
+}
+.dish_slider .slick-prev:after{
+    content: "";
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    font-size: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    background: transparent;
+    cursor: pointer;
+}
+.dish_slider .slick-prev:hover, .dish_slider .slick-next:hover{
+	background: #fff;
+}

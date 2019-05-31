@@ -35,7 +35,18 @@
 <div class="container pt-5 pb-5">
 	<div class="row">
 		<div class="col-md-6">
-			<img src="<?= get_the_post_thumbnail_url($post->ID); ?>" class="img-fluid" style="border-radius: 8px;">
+			<div class="dish_slider" style="border-radius: 8px;">
+				<img src="<?= get_the_post_thumbnail_url($post->ID); ?>" class="img-fluid">
+				<?php
+				$images = get_field('gallery');
+				if( $images )
+				{
+					foreach( $images as $image ): ?>
+					<img src="<?= $image['url']; ?>" class="img-fluid">
+					<?php endforeach;
+				}
+				?>
+			</div>
 		</div>
 		<div class="col-md-6">
 			<h3 class="pt-5"><?= $post->post_title; ?></h3>
@@ -49,5 +60,13 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$('.dish_slider').slick({
+		slidesToShow: 1,
+		arrows: true,
+		adaptiveHeight: true
+	});
+</script>
 
 <?= get_footer(); ?>
