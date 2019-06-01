@@ -12,7 +12,7 @@
 						<a href="#">Homepage</a>
 					</li>
 					<li>
-						<a href="#">Our meals</a>
+						<a href="/our-menu">Our meals</a>
 					</li>
 					<li>
 						<a href="#">Plans & prices</a>

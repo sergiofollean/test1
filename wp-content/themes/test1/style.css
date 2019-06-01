@@ -401,3 +401,53 @@ footer button{
 .dish_slider .slick-prev:hover, .dish_slider .slick-next:hover{
 	background: #fff;
 }
+.dish_types a{
+	padding: 10px 50px;
+	border-radius: 0 !important;
+	color: #09cd60;
+	border: 1px solid #09cd60;
+}
+.dish_types .nav-item{
+	margin: 0 15px;
+}
+.dish_types .nav-link.active{
+	background-color: #09cd60;
+}
+.dish{
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background: #fafafa;
+	padding-bottom: 15px;
+}
+.dish .dish_image{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+}
+.dish #title{
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+	width: 100%;
+}
+.dish img{
+	width: 21px;
+}
+.dish p{
+	padding: 0 20px;
+	font-size: 14px;
+}
+.dish #info{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14px;
+}
+.pagination{
+	padding-bottom: 50px;
+}
+.pagination a{
+	color: #000;
+}
