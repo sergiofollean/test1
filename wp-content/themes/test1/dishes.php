@@ -106,6 +106,8 @@ Template Name: Our Menu
 				$("#dishes_ajax_list").html(response);
 				$(".dish_types a").removeClass('active');
 				$(el).addClass('active');
+				$("#prev").attr("data-cat", $(el).attr('data-cat'));
+				$("#next").attr("data-cat", $(el).attr('data-cat'));
 			}
 		});
 		return false;

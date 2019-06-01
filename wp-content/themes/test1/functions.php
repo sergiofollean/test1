@@ -7,7 +7,7 @@ add_action('wp_ajax_get_page', 'get_page_ajax');
 add_action('wp_ajax_nopriv_get_page', 'get_page_ajax');
 
 function get_page_ajax(){
-	$offset = (5*$_POST['page'])-5;
+	$offset = (6*$_POST['page'])-6;
 	if($_POST['cat'] == '0'){
 		$taxquery = "";
 	}
@@ -16,7 +16,7 @@ function get_page_ajax(){
 				array(
 					'taxonomy' => 'dish_type',
 					'field' => 'slug',
-					'terms' => $_POST['cat_slug']
+					'terms' => $_POST['cat']
 				)
 			);
 	}
